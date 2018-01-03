@@ -1,0 +1,11 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="{{img}}" class="back"></image>
+    <text class="product">{{text}}</text>
+    <text class="get" bindtap="success">{{text2}}</text>
+  </view>
+  <input type="text"  class="shuru" placeholder="输入用户昵称" maxlength="20" bindblur="blur"  />
+  <text class="text2">1-20个字符，且只能由中英文、数字、“-”、“_”组成</text>
+
+</view>

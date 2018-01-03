@@ -1,0 +1,173 @@
+/**头部**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 76rpx;
+
+}
+
+.search {
+  width: 696rpx;
+  height: 68rpx;
+  background: #ffffff;
+  border-radius:38rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:row;
+}
+
+.img1 {
+  width: 52rpx;
+  height:39rpx;
+  margin: 15rpx 0 0 16rpx;
+  vertical-align: middle;
+}
+.search-text{
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 14px;
+  color:#e1e1e1;
+  width: 550rpx;
+  height:68rpx;
+  margin-left: 60rpx;
+
+}
+/*轮播*/
+.swiper
+{
+width:100%;
+height:340rpx;
+}
+
+/*中间部分*/
+.layout{
+  display: flex;
+  flex-direction:row;
+  width: 696rpx;
+  height:210rpx;
+  margin: 12px auto 0 auto;
+}
+.layout-left{
+ width: 50%;
+ height: 100%;
+ background-color: #97c6fa;
+ position: relative;
+}
+
+.layout-right{
+ width: 50%;
+ height: 100%;
+ background-color: #f19fc3;
+ margin-left: 6px;
+ position: relative;
+
+}
+.person{
+ width: 102rpx;
+ height:105rpx;
+ position: absolute;
+ left:50%;
+ margin-left: -44rpx;
+ margin-top: 30rpx;
+
+
+}
+.text1{
+ font-size: 30rpx;
+ color: #fafcfe;
+ position: absolute;
+ left:50%;
+ margin-top: 144rpx;
+ margin-left: -70rpx;
+ width:150rpx;
+ text-align: center;
+}
+
+.layout2{
+  display: flex;
+  flex-direction:row;
+  width: 696rpx;
+  height:210rpx;
+  margin: 12px auto 0 auto;
+}
+.layout2-left{
+ width: 50%;
+ height: 100%;
+ background-color: #ff6668;
+ position: relative;
+}
+
+.layout2-right{
+ width: 50%;
+ height: 100%;
+ background-color: #fab550;
+ margin-left: 6px;
+ position: relative;
+
+}
+
+/*底部*/
+.footer2{
+position:fixed;
+bottom:0;
+width:100%;
+height:98rpx;
+border-top:1px solid #ababab; 
+display: flex;
+flex-direction:row;
+}
+
+.footer2-content{
+ width: 25%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+}
+.footer2-content image{
+  margin-top: 13rpx;
+
+
+}
+.house{
+ width:53rpx;
+ height:45rpx;
+ margin-left: 70rpx;
+
+}
+.jiu{
+ width:53rpx;
+ height:46rpx;
+ margin-left: 65rpx;
+
+}
+.car{
+ width:53rpx;
+ height:46rpx;
+ margin-left: 65rpx;
+
+}
+.human{
+ width:53rpx;
+ height:46rpx;
+ margin-left: 70rpx;
+
+}
+
+.shouye{
+  font-size: 22rpx;
+  color:#33cb98;
+  text-align: center;
+  
+}
+.shouye2{
+  font-size: 22rpx;
+  color:#c4c2c3;
+  text-align: center;
+  
+}

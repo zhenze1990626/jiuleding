@@ -1,0 +1,134 @@
+/*头部*/
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: -20rpx 0 0 20rpx;
+}
+.header-text {
+  font-size: 36rpx;
+  color: #fff;
+  width: 430rpx;
+  height: 70rpx;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -72rpx;
+}
+.black{
+ width: 100%;
+ height: 20rpx;
+ background: #eeeeee;
+}
+/*定制详情*/
+
+.car-content {
+  width: 100%;
+  height: 160rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.jiu {
+  width: 70rpx;
+  height: 100rpx;
+  margin: 40rpx 0 0 20rpx;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35rpx;
+  margin-top: 35rpx;
+}
+
+.name {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 26rpx;
+  color: #d90e0e;
+  margin-top: 30rpx;
+  font-weight: bold;
+}
+
+.dingzhi {
+  font-size: 22rpx;
+  color: #05c500;
+  font-weight: bold;
+  margin: 38rpx 0 0 40rpx;
+}
+
+.position {
+  font-size: 18px;
+  color: #333;
+  position: absolute;
+  right: 126rpx;
+  top: 100rpx;
+}
+.checkbox{
+  width:  25rpx;
+  height: 24rpx;
+  margin: 70rpx 30rpx 0 20rpx;
+}
+.black2{
+ 
+
+}
+/*结算*/
+.Settlement{
+  width:100%;
+  height: 90rpx;
+  background: #b4b4b4;
+  position:fixed;
+  bottom: 100rpx;
+  display: flex;
+  line-height: 90rpx;
+  flex-direction: row;
+}
+.check{
+  width: 25rpx;
+  height: 25rpx;
+  margin: 32rpx 20rpx 0 20rpx;
+}
+.all{
+ color: #333333;
+ font-size: 36rpx;
+ margin-right: 25rpx;
+}
+.rub{
+  width: 38rpx;
+  height: 42rpx;
+  margin-top: 24rpx;
+}
+.code{
+  margin-left:396rpx;
+  width: 144rpx;
+  height: 50rpx;
+  background: #d90e0e;
+  border-radius:5px;
+  color: #ffffff;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+}

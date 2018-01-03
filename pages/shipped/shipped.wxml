@@ -1,0 +1,57 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"></image>
+    <text class="product">已发货订单</text>
+  </view>
+<!--订单-->
+  <scroll-view scroll-y style="height:340rpx; background:#eeeeee;">
+    <block wx:for="{{post_key}}" wx:for-item="item">
+      <view class="car-content" catchtap="onpost" data-postId="{{item.postId}}">
+        <navigator url="../welcome/detail/detail?id={{item.postId}}">
+          <image src="{{item.image1}}" class="jiu"></image>
+        </navigator>
+        <view class="text">
+          <text class="name">{{item.name}}</text>
+          <text class="price">￥{{item.price}}</text>
+        </view>
+        <text class="dingzhi">{{item.style}}</text>
+        <view class="position">x{{num}}</view>
+      </view>
+    </block>
+  </scroll-view>
+  <!--状态详情-->
+  <view class="state">
+    <image src="/images/center/state2.png" class="state2"></image>
+    <view class="layout">
+      <text class="layout-text1" style="color:#63c503;">等待发货</text>
+      <text class="layout-text2" style="color:#63c503;">已出库</text>
+      <text class="layout-text3">在路上</text>
+      <text class="layout-text4">等待签收</text>
+    </view>
+    <view class="send">确认收货</view>
+    <view class="send2">查看物流</view>
+    <view class="send3">延长收货</view>
+  </view>
+  <view class="hei"></view>
+
+  <!--底部导航-->
+  <view class="footer" style="position:fixed;bottom:0">
+    <view class="footer-content">
+      <image src="/images/detail/zhuye2.png" class="zhuye"></image>
+      <text class="zhuye-text1">主页</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/fenlei.png" class="zhuye"></image>
+      <text class="zhuye-text">分类</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/gouwuche.png" class="zhuye"></image>
+      <text class="zhuye-text">购物车</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/detail/hong-my.png" class="zhuye"></image>
+      <text class="zhuye-text" style="color:#ff0000">我的</text>
+    </view>
+  </view>
+</view>

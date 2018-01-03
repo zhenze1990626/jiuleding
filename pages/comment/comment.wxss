@@ -1,0 +1,105 @@
+/*头部*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  height:1400rpx;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: -20rpx 0 0 20rpx;
+}
+
+.header-text {
+  font-size: 36rpx;
+  color: #fff;
+  width: 430rpx;
+  height: 70rpx;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -72rpx;
+}
+/*点评*/
+.degree{
+  margin:30rpx 0 0 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.degree-text{
+  color: #eb4f38;
+  font-size: 36rpx;
+  width: 100%;
+  height: 50rpx;
+}
+.zan2{
+  width: 46rpx;
+  height: 46rpx;
+  margin-top: 10rpx;
+  margin-right:10rpx;
+}
+.zan{
+
+  position: relative;
+}
+.talk{
+  width: 700rpx;
+  height: 50rpx;
+  padding-left: 10rpx;
+  font-size: 22rpx;
+  margin: 20rpx auto 0 auto;
+  border: 1px solid #eb4f38;
+  position: absolute;
+  left: 20rpx;
+  top:240rpx;
+  border-radius:5rpx; 
+}
+.haha{
+  width: 200rpx;
+  height: 60rpx;
+  background: #eb4f38;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius:5px;
+  position: absolute;
+  left: 275rpx;
+  top:800rpx;
+  color: #ffffff;
+
+}
+
+
+.star-image{
+  position: absolute;
+  top:10rpx;
+  width: 46rpx;
+  height: 46rpx;
+  src: "../../images/normal.png";
+
+}
+.item{
+  position: absolute;
+  top: 10rpx;
+  width: 46rpx;
+  height: 46rpx;
+}

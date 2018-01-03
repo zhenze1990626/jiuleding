@@ -1,0 +1,103 @@
+/*头部*/
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: -20rpx 0 0 20rpx;
+}
+.header-text {
+  font-size: 36rpx;
+  color: #fff;
+  width: 430rpx;
+  height: 70rpx;
+  align-items: center;
+  position:absolute;
+  left: 50%;
+  margin-left:-72rpx;
+}
+
+/*循环地址*/
+.address{
+ width:100%;
+ height: 159rpx;
+ border-bottom: 1px solid #eeeeee;
+ background:#ffffff; 
+ display: flex;
+ flex-direction:column;
+ position: relative;
+}
+.address-text1{
+ display: flex;
+ flex-direction: row;
+}
+.address-text2{
+ display: flex;
+ flex-direction: row;
+}
+.text1{
+ font-size: 26rpx;
+ color:#333333;
+ width: 454rpx;
+ margin: 15rpx 0 20rpx 20rpx;
+ font-weight: bold;
+}
+.text2{
+ font-size: 26rpx;
+ color:#333333;
+ font-weight: bold;
+ margin-top: 15rpx;
+}
+.moren{
+ font-size: 12px;
+ color:#d90e0e;
+}
+.address-shouhuo{
+ color:#333333;
+ font-size:12px;
+ letter-spacing:1px;
+ line-height:40rpx;
+ height: 24rpx;
+ width: 600rpx;
+ margin-left: 20rpx;
+ text-align: left;
+}
+.xuan{
+  width: 27rpx;
+  height: 27rpx;
+  position: absolute;
+  right:20rpx;
+  bottom: 70rpx;
+}
+/*底部*/
+.add{
+  width: 100%;
+  height: 96rpx;
+  background: #ff6000;
+  bottom:0;
+  position: fixed;
+  text-align: center;
+  color: #ffffff;
+  font-size: 36rpx;
+  line-height: 96rpx;
+}

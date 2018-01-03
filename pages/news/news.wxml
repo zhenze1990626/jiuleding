@@ -1,0 +1,25 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"></image>
+    <text class="header-text">{{text}}</text>
+  </view>
+  <!--消息列表-->
+<block wx:for="{{post}}" wx:for-item="item">
+  <view class="list">
+    <image src="/images/center/check.png" class="checkbox"></image>
+    <image src="{{item.image}}" class="person2"></image>
+    <view class="list-text">
+     <text class="text-black"><text class="text-red">【系统】</text><text>{{item.text2}}</text></text>
+     <text class="time">{{year}}-{{month}}-{{date}} {{h}}:{{m}}</text>
+    </view>
+  </view>
+</block>
+<!--删除-->
+<view class="all">
+  <image src="/images/center/check.png" class="checkbox2"></image>
+  <text class="all-text">全选</text>
+</view>
+<view class="detele">删除</view>
+
+</view>

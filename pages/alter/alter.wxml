@@ -1,0 +1,25 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"></image>
+    <text class="header-text">{{text}}</text>
+  </view>
+  <!--循环地址-->
+  <view class="address">
+   <view class="address-text1">
+    <text class="text1">收货人：{{user}}</text>
+    <text class="text2">{{phone}}</text>
+   </view>
+   <view class="address-text2">
+      <text class="address-shouhuo"><text class="moren">【默认】</text>{{detail}} {{address}} {{number}}</text>
+       <image src="/images/car/checkbox2.png" class="xuan"></image>
+   </view>
+  </view>
+
+
+ <!--新增收货地址-->
+ <view class="add" bindtap="url">
+  管理收货地址
+ </view>
+
+</view>

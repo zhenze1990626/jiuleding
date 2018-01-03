@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/comment/comment",
+    "pages/comment/comment-list/comment-list",
+    "pages/welcome/detail/detail",
+    "pages/car/car",
+  
+    "pages/address/address",
+    "pages/confirm/confirm",
+    
+    "pages/name/name",
+    "pages/payment/payment",
+    "pages/news/news",
+    "pages/payment/payment",
+    "pages/welcome/detail/detail",
+    "pages/address/address",
+    "pages/confirm/confirm",
+    "pages/add-address/add-address",
+    "pages/shipped/shipped",
+    "pages/not-shipped/not-shipped",
+    "pages/person/person",
+    "pages/brand/brand-detail/brand-detail",
+    "pages/brand/brand",
+    "pages/welcome/welcome",
+    "pages/search/search",
+    "pages/nosearch/nosearch",
+    "pages/recommendation/recommendation",
+    "pages/index/index",
+    "pages/alter/alter"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#33cb98",
+    "backgroundColor": "#eeeeee"
+  }
+}

@@ -1,0 +1,28 @@
+<import src="../../welcome/welcome-item/welcome-item-template2.wxml" />
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="{{image}}" class="back"></image>
+    <text class="product">{{text}}</text>
+  </view>
+  <!--中部大图-->
+  <image src="{{img1}}" class="background"></image>
+  <image src="{{img2}}" class="chuanqi"></image>
+  <image src="{{img3}}" class="background"></image>
+  <!--新闻咨询-->
+  <view class="tap">
+    <text class="tap-text1">新闻咨询</text>
+    <text class="tap-text2">更多>>></text>
+  </view>
+  <!--循环新闻列表-->
+  <scroll-view scroll-y style="height:400rpx;">
+    <block wx:for="{{post}}" wx:for-item="item">
+      <view class="list" bindtap="ontap" data-postId="{{item.postId}}">
+        <image src="{{item.img4}}" class="zixun"></image>
+        <text class="list-text">{{item.text2}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <!--底部-->
+  <template is="postItem" />
+</view>

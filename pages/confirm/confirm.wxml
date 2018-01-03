@@ -1,0 +1,54 @@
+
+<import src="../welcome/welcome-item/welcome-item-template2.wxml" />
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back" bindtap="back"></image>
+    <text class="header-text">{{confirm}}</text>
+  </view>
+  <!--订单地址-->
+  <view class="address">
+    <view class="address-text1">
+      <text class="text1">收货人：{{user}}</text>
+      <text class="text2">{{phone}}</text>
+    </view>
+    <view class="address-text2">
+      <text class="address-shouhuo">{{detail}} {{address}} {{number}}</text>
+      <image src="/images/address/jiantou.png" class="jiantou"></image>
+      <image src="/images/address/address2.png" class="address2"></image>
+    </view>
+  </view>
+  <!--订单详情-->
+ <scroll-view scroll-y style="height:600rpx;" >
+  <block wx:for="{{post_key}}" wx:for-item="item">
+  <view class="car-content" catchtap="onpost" data-postId="{{item.postId}}">
+    <navigator url="../welcome/detail/detail?id={{item.postId}}">
+    <image src="{{item.image1}}" class="jiu"></image>
+    </navigator>
+    <view class="text">
+     <text class="name">{{item.name}}</text>
+     <text class="price">￥{{item.price}}</text>
+    </view>
+    <text class="dingzhi">{{item.style}}</text>
+    <view class="position">x{{num}}</view>
+  </view>
+ </block>
+ </scroll-view >
+ <!--附加信息-->
+ <view class="onback">此商品不支持退货</view>
+ <view class="onback2">
+  <text>配送方式</text>
+  <text class="kuaidi">快递免邮</text>
+ </view>
+ <view class="onback2">
+  <text>买家留言</text>
+  <input type="text" class="say" placeholder="选填,可填写您和卖家达成一致的要求" />
+ </view>
+<!--全选-->
+ <view class="all">
+  <text class="all-text">全选:<text class="color">￥{{totalPrice}}</text></text>
+  <view class="confirm2" bindtap="confirm">确认</view>
+ </view>
+  <!--底部导航-->
+ <template is="postItem"/>
+</view>

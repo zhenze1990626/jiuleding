@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="container">
+<!--头部-->
+  <view class="header">
+    <view class="search">
+      <image src="/images/index/search.png" class="img1" bindtap="imgClick"></image>
+      <input type="text" class="search-text" fouce="true" value="输入酒品名称或酒品牌搜索" auto-focus/>
+    </view>
+  </view>
+  <!--轮播-->
+  <swiper class="swiper" indicator-dots="true" indicator-color="#b4b4c9" indicator-active-color="yellow" autoplay="true" interval="3000">
+    <swiper-item>
+      <image src="/images/index/lunbo.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/index/lunbo2.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/index/lunbo3.png" class="swiper"></image>
+    </swiper-item>
+  </swiper>
+    <!--中间内容板块-->
+  <view class="layout">
+    <view class="layout-left" bindtap="personClick">
+      <image src="/images/index/person.png" class="person"></image>
+      <text class="text1">私人定制</text>
+    </view>
+    <view class="layout-right">
+      <image src="/images/index/tree.png" class="person"></image>
+      <text class="text1">敬请期待</text>
+    </view>
+  </view>
+  <view class="layout2">
+    <view class="layout2-left">
+      <image src="/images/index/get.png" class="person"></image>
+      <text class="text1">敬请期待</text>
+    </view>
+    <view class="layout2-right">
+      <image src="/images/index/sao.png" class="person"></image>
+      <text class="text1">敬请期待</text>
+    </view>
+  </view>
+   <!--底部模块-->
+  <view class="footer2">
+    <view class="footer2-content">
+     <image src="/images/index/house.png" class="house"></image>
+     <text class="shouye">首页</text>
+    </view>
+    <view class="footer2-content">
+     <image src="/images/index/jiu.png" class="jiu"></image>
+     <text class="shouye2">酒圈子</text>
+    </view>
+    <view class="footer2-content">
+     <image src="/images/index/car.png" class="car"></image>
+     <text class="shouye2">购物车</text>
+    </view>
+    <view class="footer2-content">
+     <image src="/images/index/human.png" class="human"></image>
+     <text class="shouye2">我</text>
+    </view>
+  </view>
+</view>

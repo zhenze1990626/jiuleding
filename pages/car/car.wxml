@@ -1,0 +1,43 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back" bindtap="tap"></image>
+    <text class="header-text">购物车</text>
+    <text class="header-text2" bindtap="write">编辑</text>
+  </view>
+<!--购物车循环-->
+ <scroll-view scroll-y style="height:900rpx;" >
+ <block wx:for="{{post_key}}" wx:for-item="item">
+  <view class="car-content" catchtap="onpost" data-postId="{{item.postId}}" wx:key="{{index}}">
+    <image src="/images/car/checkbox2.png" class="xuan" wx:if="{{item.selected}}" data-index="{{index}}" bindtap="selectList"></image>
+    <image src="/images/car/checkbox.png" class="xuan" wx:else="{{item.selected}}" data-index="{{index}}" bindtap="selectList"></image>
+    <navigator url="../welcome/detail/detail?id={{item.postId}}">
+    <image src="{{item.image1}}" class="jiu"></image>
+    </navigator>
+    <view class="text">
+     <text class="name">{{item.name}}</text>
+     <text class="price">￥{{item.price}}</text>
+    </view>
+    <text class="dingzhi">{{item.style}}</text>
+    <input type="text" class="text2" value="{{num}}" bindinput="input" disabled/>
+    <image src="/images/car/laji.png" class="laji" bindtap="deleteList" data-index="{{index}}"></image>
+  </view>
+ </block>
+ </scroll-view>
+
+ <!--结算-->
+ <view class="count">
+   <image src="/images/detail/duihao.png" class="xuan2" wx:if="{{selectAllStatus}}" data-index="{{index}}" bindtap="selectAll"></image>
+   <image src="/images/detail/duihao2.png" class="xuan2" wx:else="{{selectAllStatus}}" data-index="{{index}}" bindtap="selectAll"></image>
+   <text class="all">全选</text>
+   <view class="heji">
+    <text class="heji-text">合计：<text class="price2">￥{{totalPrice}}</text></text>
+    <text class="address-price">不含运费</text>
+   </view>
+   <view class="jiesuan" bindtap="click">
+    {{count}}
+   </view>
+ </view>
+ 
+
+</view>

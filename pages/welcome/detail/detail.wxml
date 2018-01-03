@@ -1,0 +1,66 @@
+<import src="../welcome-item/welcome-item-template2.wxml" />
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back" bindtap="tap"></image>
+    <text class="header-text">{{text}}</text>
+    <image src="/images/detail/dianji.png" class="dianji"></image>
+  </view>
+  <!--轮播-->
+  <swiper class="swiper" indicator-dots="true" indicator-color="#7f7f7f" indicator-active-color="#ff4400" autoplay="true" interval="3000">
+    <swiper-item>
+      <image src="/images/detail/lunbo1.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/lunbo2.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/lunbo3.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/lunbo4.png" class="swiper"></image>
+    </swiper-item>
+  </swiper>
+  <!--页面主体开始-->
+  <view class="content">
+    <text class="name">{{text}}</text>
+    <view class="text">
+      <text class="jiage">{{text1}}</text>
+      <text class="jiage2">{{text2}}</text>
+      <text class="jiage3">已售出{{text3}}件</text>
+    </view>
+    <text class="zhuti">{{text4}}</text>
+    <text class="lipin">{{text5}}</text>
+    <text class="pinpai">品牌：<text class="juti">{{text6}}</text>   <text class="xiangxing">香型：<text class="juti">{{text7}}</text></text></text>
+    <view class="num">
+     <text class="num1">数量：</text>
+     <text class="jian" bindtap="bindMinus">-</text>
+     <text class="num2">{{num}}</text>
+     <text class="jian2" bindtap="bindPlus">+</text>
+     <text class="text6">{{text8}}</text>
+    </view>
+
+    <button class="car" bindtap="ontap">
+    加入购物车
+    </button>
+
+  </view>
+  <!--图文详情-->
+  <view class="detail-content">
+    <text class="detail-text">图文详情<text class="detail-wifi">（建议在Wifi环境下浏览）</text></text>
+    <text class="text9">{{text9}}<text class="text10">{{text10}}</text></text>
+    <text class="text11">{{text11}}<text class="text12">{{text12}}</text></text>
+    <text class="text11">{{text13}}<text class="text12">{{text14}}</text></text>
+    <text class="text11">{{text15}}<text class="text12">{{text16}}</text></text>
+    <text class="text11">{{text17}}<text class="text12" style="margin-left:200rpx;">{{text18}}</text></text>
+    <text class="text11">{{text19}}</text>
+  </view>
+  <!--定制点评-->
+  <view class="detail-content2">
+   <text class="detail-text">定制点评 <text class="detail-wifi">228条评论</text></text>
+   <image src="/images/detail/person2.png" class="person"></image>
+   <text class="answer">我就是我我敢比</text>
+  </view>
+  <!--底部导航-->
+ <template is="postItem"/>
+</view>

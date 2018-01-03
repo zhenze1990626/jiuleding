@@ -1,0 +1,109 @@
+/*头部*/
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: 0 80rpx 0 20rpx;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: 500rpx;
+  height: 52rpx;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 24rpx;
+  color: #999;
+  vertical-align: middle;
+  margin-right: 56rpx;
+}
+
+.search2 {
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin: 10rpx 12rpx 0 10rpx;
+}
+.dianji{
+ width: 46rpx;
+ height: 46rpx;
+}
+.search{
+ width:400rpx;
+}
+/*未找到商品*/
+.no{
+  width: 100%;
+  background: #eeeeee;
+  height: 213rpx;
+  text-align: center;
+  line-height: 213rpx;
+  font-size: 26rpx;
+  color: #333333;
+}
+/*推荐商品*/
+.tuijian{
+  width: 100%;
+  height: 90rpx;
+  background: #ffffff;
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color: #d90e0e;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+}
+
+/*商品*/
+.goods{
+ width: 100%;
+ height: 250rpx;
+ background: #ffffff;
+ border-bottom:1px solid #eeeeee; 
+ display:flex;
+ flex-direction: row;  
+}
+.zhizun{
+ width:146rpx;
+ height:155rpx;
+ margin: 54rpx 0 0 35rpx;
+}
+.goods-text{
+ display:flex;
+ flex-direction:column;  
+}
+.name{
+ font-size: 22rpx;
+ color:#333333;
+ margin: 40rpx 0 80rpx 40rpx;
+ width: 500rpx;
+}
+.price{
+ font-size: 26rpx;
+ color:#ff4400;
+ font-weight: blod;
+ margin-left: 40rpx;
+
+}
+.say{
+ font-size: 12px;
+ color: #333333;
+ margin: 10rpx 0 0 40rpx;
+}
+.say2{
+ margin-left: 80rpx;
+
+}

@@ -1,0 +1,31 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"  bindtap="tap"></image>
+    <text class="header-text">{{text}}</text>
+  </view>
+  <!--订单-->
+  <view class="list">
+   <view class="layout">
+    <view class="image">
+       <block wx:for="{{key}}">
+        <image class="star-image" style="left: {{item*60}}rpx" src="{{selectedSrc}}"></image>
+       </block>
+    </view>
+    <text class="time">{{year}}-{{month}}-{{date}} {{h}}:{{m}}:{{s}}</text>
+   </view>
+   <view class="layout2">
+    <text class="cicle">{{name}}</text>
+    <text class="name">{{user}}</text>
+   </view>
+  </view>
+
+
+
+
+
+
+
+
+
+</view>

@@ -1,0 +1,69 @@
+/*头部*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.back {
+  width: 51rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: 0 80rpx 0 20rpx;
+}
+.product{
+  font-size: 36rpx;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  width:200rpx;
+  margin-left: -100rpx;
+  text-align: center;
+}
+.back{
+  width: 33rpx;
+  height: 50rpx;
+
+}
+.background{
+  width:100%;
+  height:195rpx;
+}
+.chuanqi{
+ width:100%;
+ height:655rpx;
+}
+.get{
+ font-size: 26rpx;
+ color: #ffffff;
+ position: absolute;
+ right:20rpx;
+}
+
+/*输入框*/
+.shuru{
+ width:100%;
+ height:90rpx;
+ background: #ffffff;
+ margin-top: 20rpx;
+ color:#333333;
+ font-size: 26rpx;
+ padding-left: 36rpx; 
+}
+.text2{
+  font-size: 22rpx;
+  color: #333333;
+  height:2000rpx;
+  margin-top: 20rpx;
+  margin-left: 36rpx;
+
+
+}

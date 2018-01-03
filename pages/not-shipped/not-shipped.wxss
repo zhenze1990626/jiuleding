@@ -1,0 +1,144 @@
+/*头部*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: 0 80rpx 0 20rpx;
+}
+
+.product {
+  font-size: 36rpx;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -72rpx;
+}
+
+/*定制详情*/
+
+.car-content {
+  width: 100%;
+  height: 160rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.jiu {
+  width: 70rpx;
+  height: 100rpx;
+  margin: 40rpx 0 0 20rpx;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35rpx;
+  margin-top: 35rpx;
+}
+
+.name {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 26rpx;
+  color: #d90e0e;
+  margin-top: 30rpx;
+  font-weight: bold;
+}
+
+.dingzhi {
+  font-size: 22rpx;
+  color: #05c500;
+  font-weight: bold;
+  margin: 38rpx 0 0 40rpx;
+}
+
+.position {
+  font-size: 18px;
+  color: #333;
+  position: absolute;
+  right: 126rpx;
+  top: 100rpx;
+}
+
+/*状态*/
+
+.state {
+  width: 100%;
+  height: 190rpx;
+  background: #fff;
+  position: relative;
+}
+
+.state2 {
+  width: 710rpx;
+  height: 29rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+.layout{
+  width: 750rpx;
+  display: flex;
+  flex-direction:row;
+  margin-top: 20rpx;
+}
+.layout  text{
+  color: #333333;
+  font-size: 22rpx;
+}
+.layout-text1{
+ margin-left: 20rpx;
+
+}
+.layout-text2{
+ margin-left:135rpx;
+}
+.layout-text3{
+ margin-left:145rpx;
+}
+.layout-text4{
+ margin-left:130rpx;
+}
+.send{
+  width: 114rpx;
+  height: 39rpx;
+  border: 1px solid #d90e0e;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  border-radius:3px;
+  color: #d90e0e;
+  font-size: 22rpx; 
+  text-align: center;
+  line-height: 39rpx;
+}
+.hei{
+  height: 700rpx;
+  width: 100%;
+  background: #eeeeee;
+}
+

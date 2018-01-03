@@ -1,0 +1,249 @@
+<import src="welcome-item/welcome-item-template.wxml" />
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/welcome/logo.png" class="logo"></image>
+    <view class="input">
+      <image src="/images/welcome/search2.png" class="search2"></image>
+      <input type="text" class="" placeholder="酒乐订欢迎你！"/>
+    </view>
+    <image src="/images/welcome/dian.png" class="dian"></image>
+  </view>
+  <!--轮播-->
+  <swiper class="swiper" indicator-dots="true" indicator-color="#b4b4c9" indicator-active-color="yellow" autoplay="true" interval="3000">
+    <swiper-item>
+      <image src="/images/index/lunbo.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/index/lunbo2.png" class="swiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/index/lunbo3.png" class="swiper"></image>
+    </swiper-item>
+  </swiper>
+  <!--酒乐订新闻-->
+  <view class="xinwen">
+    <image src="/images/welcome/logo2.png" class="logo2"></image>
+    <image src="/images/welcome/xinwen.png" class="xinwen2"></image>
+    <text class="text-menu">酒乐订陪您一起开心</text>
+  </view>
+  <!--品牌定制-->
+  <view class="dingzhi">
+    <image src="/images/welcome/shangwu.png" class="dingzhi1"></image>
+    <image src="/images/welcome/hunyan.png" class="dingzhi2"></image>
+  </view>
+  <view class="dingzhi">
+    <image src="/images/welcome/ziyou.png" class="dingzhi3"></image>
+    <image src="/images/welcome/gexing.png" class="dingzhi4"></image>
+  </view>
+  <!--秒杀-->
+  <view class="miaosha">
+    <image src="/images/welcome/biqiang.png" class="biqiang"></image>
+    <text class="sha1">掌上秒杀<text class="sha2">距结束</text></text>
+    <view class="time" style="margin-left:16rpx">03</view>
+    <text class="maohao">:</text>
+    <view class="time">47</view>
+    <text class="maohao">:</text>
+    <view class="time">19</view>
+    <view class="you">
+      <text class="gengduo">更多美酒等您来</text>
+      <image src="/images/welcome/you.png" class="you2"></image>
+    </view>
+  </view>
+  <!--五粮液-->
+  <view class="jiage">
+   <navigator url="./detail/detail?id=102">
+    <view class="jiage-content" style="margin:0">
+      <text class="lan">{{xinxi1}}</text>
+      <image src="{{img1}}" class="zhizun"></image>
+      <text class="hong">{{jiage1}}</text>
+      <text class="hui">{{jiage2}}</text>
+    </view>
+   </navigator>
+   <navigator url="./detail/detail?id=100">
+    <view class="jiage-content">
+      <text class="lan" style="color:#f73d04;">{{xinxi2}}</text>
+      <image src="{{img2}}" class="zhizun"></image>
+      <text class="hong">{{jiage1}}</text>
+      <text class="hui">{{jiage2}}</text>
+    </view>
+   </navigator>
+   <navigator url="./detail/detail?id=101">
+    <view class="jiage-content">
+      <text class="lan" style="color:#08b254;">{{xinxi3}}</text>
+      <image src="{{img3}}" class="zhizun"></image>
+      <text class="hong">{{jiage1}}</text>
+      <text class="hui">{{jiage2}}</text>
+    </view>
+   </navigator>
+  </view>
+  <!--app专享-->
+  <view class="app">
+    <view class="app-left">
+      <view class="app-left-1">
+        <text class="app-text1">APP专享区</text>
+        <image src="/images/welcome/vip.png" class="vip"></image>
+      </view>
+      <view class="app-left-2">
+        <text class="app-text2">53°贵州茅台镇商务定制酒 500ml</text>
+      </view>
+      <view class="app-left-3">
+        <image src="/images/welcome/zhizun-huang.png" class="yellow"></image>
+        <image src="/images/welcome/zhizun-hei.png" class="black"></image>
+        <view class="cicle">
+          <text class="app-miao">秒杀</text>
+          <text class="app-qian">￥39</text>
+        </view>
+      </view>
+    </view>
+    <view class="app-right">
+      <view class="app-right-top">
+        <view class="app-right-top-left">
+          <view class="xianshi">
+            <text class="xianshi-text">限时特卖</text>
+            <image src="/images/welcome/zhizhen.png" class="zhizhen"></image>
+          </view>
+          <text class="shouxuan">高端大气商务定制酒 企业首选</text>
+          <view class="tejia">天天特价</view>
+        </view>
+        <image src="/images/welcome/shuang-hei.png" class="shuang-black" style=" margin: 70rpx 0 0 10rpx;"></image>
+      </view>
+      <view class="app-right-top">
+        <view class="app-right-top-left">
+          <view class="xianshi">
+            <text class="xianshi-text" style="color:#a916c4;">乐享购</text>
+            <image src="/images/welcome/xiang.png" class="zhizhen" style="margin-left:36rpx;"></image>
+          </view>
+          <text class="shouxuan">汾酒定制，婚庆宴会必备定制酒。</text>
+          <view class="tejia2">天天乐购</view>
+        </view>
+        <image src="/images/welcome/shuang-hei.png" class="shuang-black"></image>
+      </view>
+    </view>
+  </view>
+  <!--热销定制-->
+  <view class="rexiao">
+    <text class="rexiao-text">热销定制推荐</text>
+    <view class="rexiao-gengduo">
+      <text class="rexiao-text2">更多</text>
+      <image src="/images/welcome/you.png" class="you2"></image>
+    </view>
+  </view>
+  <!--五粮液定制酒循环-->
+  <block wx:for="{{post_key}}" wx:for-item="item">
+    <view class="tuijian">
+      <view class="tuijian1" catchtap="onpost" data-postId="{{item.postId}}">
+        <view class="tuijia1-1">
+          <image src="{{item.post_img}}" class="shou"></image>
+          <image src="{{item.post2_img}}" class="shou2"></image>
+        </view>
+        <view class="hongxian"></view>
+        <text class="tuijian-text">{{item.title}}</text>
+        <text class="tuijian-text2">{{item.title2}}</text>
+      </view>
+      <view class="tuijian1" style="margin-left:30rpx;" catchtap="onpost2" data-postId="{{item.postId2}}">
+        <view class="tuijia1-1">
+          <image src="{{item.post3_img}}" class="shou"></image>
+          <image src="{{item.post4_img}}" class="shou2"></image>
+        </view>
+        <view class="hongxian"></view>
+        <text class="tuijian-text">{{item.title3}}</text>
+        <text class="tuijian-text2">{{item.title4}}</text>
+      </view>
+    </view>
+  </block>
+  <!--乐定主题街-->
+  <view class="rexiao">
+    <text class="rexiao-text">乐定主题街</text>
+  </view>
+  <!--主题内容-->
+  <view class="zhuti">
+    <view class="left">
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">高端收藏</text>
+          <text class="left-content-1-text2">国窖1573 收藏首选</text>
+        </view>
+        <image src="/images/welcome/guojiao.png" class="guojiao"></image>
+      </view>
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">婚宴用酒</text>
+          <text class="left-content-1-text2">婚宴用酒 喜事连连</text>
+        </view>
+        <image src="/images/welcome/guojiao.png" class="guojiao"></image>
+      </view>
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">猎奇专区</text>
+          <text class="left-content-1-text2">财富之酒 您的选择</text>
+        </view>
+        <image src="/images/welcome/zhizun-shuang.png" class="zhizun-shuang"></image>
+      </view>
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">调酒配方</text>
+          <text class="left-content-1-text2">自己动手 丰衣足酒</text>
+        </view>
+        <image src="/images/welcome/xinfei.png" class="xinfei"></image>
+      </view>
+    </view>
+    <view class="right">
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">精选精品</text>
+          <text class="left-content-1-text2">性价比爆棚</text>
+        </view>
+        <image src="/images/welcome/xinchun.png" class="xinchun"></image>
+      </view>
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">大师推荐</text>
+          <text class="left-content-1-text2">色香味俱全</text>
+        </view>
+        <image src="/images/welcome/dashi.png" class="dashi"></image>
+      </view>
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">乐订论坛</text>
+          <text class="left-content-1-text2">说出你的心声</text>
+        </view>
+        <image src="/images/welcome/huangping.png" class="huangping"></image>
+      </view>
+      <view class="left-content">
+        <view class="left-content-1">
+          <text class="left-content-1-text1">精品酒铺</text>
+          <text class="left-content-1-text2">来这里就对了</text>
+        </view>
+        <image src="/images/welcome/baiping.png" class="baiping"></image>
+      </view>
+    </view>
+  </view>
+  <!--品牌大全-->
+  <view class="rexiao">
+    <text class="rexiao-text">品牌大全</text>
+    <view class="rexiao-gengduo">
+      <text class="rexiao-text2">更多</text>
+      <image src="/images/welcome/you.png" class="you2"></image>
+    </view>
+  </view>
+   <!--品牌大全-内容-->
+  <view class="tuijian">
+    <view class="tuijian1">
+     <image src="/images/welcome/wuliangye.png" class="wuliangye"></image>
+    </view>
+    <view class="tuijian1" style="margin-left:30rpx;">
+     <image src="/images/welcome/fenjiu.png" class="wuliangye"></image>
+    </view>
+  </view>
+   <view class="tuijian">
+    <view class="tuijian1">
+     <image src="/images/welcome/maotai.png" class="wuliangye"></image>
+    </view>
+    <view class="tuijian1" style="margin-left:30rpx;">
+     <image src="/images/welcome/laojiao.png" class="wuliangye"></image>
+    </view>
+  </view>
+  <!--底部导航-->
+  <template is="postItem"/>
+</view>

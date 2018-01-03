@@ -1,0 +1,52 @@
+
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"></image>
+    <view class="input">
+      <image src="/images/welcome/search2.png" class="search2" bindtap="search"></image>
+      <input type="text" class="search" placeholder="今日特卖，4月22日正式开抢！" />
+    </view>
+    <image src="/images/detail/dianji.png" class="dianji"></image>
+  </view>
+  <!--导航-->
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">销量优先</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">价格优先</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">评价</view>
+  </view>
+  <!--循环显示商品-->
+<scroll-view scroll-y style="height:900rpx;" >
+ <block wx:for="{{local}}" wx:for-item="item">
+  <view class="goods">
+    <image src="{{item.goods}}" class="zhizun"></image>
+    <view class="goods-text">
+      <text class="name">{{item.name}}</text>
+      <text class="price">￥{{item.price}}</text>
+      <text class="say">好评:{{item.num}}<text class="say2">{{item.number}}人</text></text>
+    </view>
+  </view>
+ </block>
+</scroll-view>
+  <!--底部导航-->
+ <view class="footer" style="position:fixed;bottom:0">
+    <view class="footer-content">
+      <image src="/images/detail/zhuye2.png" class="zhuye"></image>
+      <text class="zhuye-text1">主页</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/fenlei.png" class="zhuye"></image>
+      <text class="zhuye-text">分类</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/gouwuche.png" class="zhuye"></image>
+      <text class="zhuye-text">购物车</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/detail/hong-my.png" class="zhuye"></image>
+      <text class="zhuye-text" style="color:#ff0000">我的</text>
+    </view>
+  </view>
+
+
+</view>

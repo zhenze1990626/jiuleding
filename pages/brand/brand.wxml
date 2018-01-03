@@ -1,0 +1,42 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"></image>
+    <text class="product">品牌大全</text>
+  </view>
+  <!--中部大图-->
+  <image src="/images/detail/background.png" class="background"></image>
+  <!--循环品牌-->
+  <scroll-view scroll-y style="height:880rpx;">
+    <block wx:for="{{postbrand}}" wx:for-item="item">
+      <view class="content-brand">
+        <view class="left" bindtap="ontap1" data-postId="{{item.postId}}">
+          <image src="{{item.img1}}" class="img"></image>
+        </view>
+        <view class="right" bindtap="ontap2" data-postId="{{item.postId2}}">
+          <image src="{{item.img2}}" class="img"></image>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <!--底部导航-->
+  <view class="footer" style="position:fixed;bottom:0">
+    <view class="footer-content">
+      <image src="/images/detail/zhuye2.png" class="zhuye"></image>
+      <text class="zhuye-text1">主页</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/fenlei.png" class="zhuye"></image>
+      <text class="zhuye-text">分类</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/gouwuche.png" class="zhuye"></image>
+      <text class="zhuye-text">购物车</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/detail/hong-my.png" class="zhuye"></image>
+      <text class="zhuye-text" style="color:#ff0000">我的</text>
+    </view>
+  </view>
+
+</view>

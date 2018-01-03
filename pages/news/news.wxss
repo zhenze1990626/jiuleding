@@ -1,0 +1,134 @@
+/*头部*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  height:1400rpx;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: -20rpx 0 0 20rpx;
+}
+
+.header-text {
+  font-size: 36rpx;
+  color: #fff;
+  width: 430rpx;
+  height: 70rpx;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -72rpx;
+}
+
+/*消息列表*/
+
+.list {
+  width: 100%;
+  height: 125rpx;
+  background: #eee;
+  border-bottom: 1px dotted #b5b5b5;
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox {
+  width: 25rpx;
+  height: 25rpx;
+  margin: 50rpx 30rpx 0 20rpx;
+}
+
+.person2 {
+  width: 85rpx;
+  height: 85rpx;
+  margin-top: 20rpx;
+}
+
+.list-text {
+  display: flex;
+  flex-direction: column;
+  width: 562rpx;
+  height: 80rpx;
+  margin: 30rpx 0 0 20rpx;
+
+}
+
+.text-red {
+  color: #d90e0e;
+  font-size: 22rpx;
+  margin-right: 10rpx;
+}
+
+.text-black {
+  font-size: 22rpx;
+  color: #666;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.time{
+ width: 173rpx;
+ height: 34rpx;
+ margin-left: 380rpx;
+ margin-top:20rpx;
+ color: #666666;
+ font-size: 22rpx;
+}
+
+/*删除*/
+.all{
+display: flex;
+flex-direction:row;
+position: fixed;
+bottom: 15rpx;
+left:20rpx;
+height: 22rpx;
+width: 200rpx;
+align-items: center;
+}
+
+.checkbox2 {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.all-text{
+ color: #333333;
+ font-size: 22rpx;
+ margin-left: 10rpx;
+}
+.detele{
+ width: 102rpx;
+ height: 30rpx;
+ background: #22c607;
+ border-radius:5rpx;
+ color: #ffffff;
+ font-size: 22rpx;
+ text-align: center;
+ line-height:30rpx; 
+ position:fixed;
+ right: 20rpx;
+ bottom:15rpx;
+ 
+}

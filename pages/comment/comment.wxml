@@ -1,0 +1,19 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back"></image>
+    <text class="header-text">{{text}}</text>
+  </view>
+  <view class="degree">
+    <text class="degree-text">满意度星级</text>
+    <view class="zan">
+      <block wx:for="{{stars}}">
+        <image class="star-image" style="left: {{item*60}}rpx" src="{{key > item ?selectedSrc : normalSrc}}">
+          <view class="item" data-key="{{item+1}}" bindtap="selectRight"></view>
+        </image>
+      </block>
+    </view>
+    <input type="text" placeholder="请留下您的评价！！！！！" class="talk" bindblur="text" />
+    <view class="haha" bindtap="success">提交</view>
+  </view>
+</view>

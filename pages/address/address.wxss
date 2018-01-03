@@ -1,0 +1,108 @@
+/*头部*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: -20rpx 0 0 20rpx;
+}
+.header-text {
+  font-size: 36rpx;
+  color: #fff;
+  width: 430rpx;
+  height: 70rpx;
+  align-items: center;
+  position:absolute;
+  left: 50%;
+  margin-left: -108rpx;
+
+}
+/*内容部分*/
+.address-content{
+ width: 100%;
+ height: 455rpx;
+ background: #fff;
+ display: flex;
+ flex-direction: column;
+}
+.address-row{
+ display: flex;
+ flex-direction: row;
+ border-bottom:1px solid #eeeeee;
+ width: 100%;
+ height: 90rpx;
+ line-height: 90rpx;
+ position: relative;
+}
+.address-row text{
+  color:#333333;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.address-row input{
+  height: 100%;
+  position: absolute;
+  right: 0;
+  line-height: 90rpx;
+  color:#333333;
+  font-size: 26rpx;
+  width: 520rpx;
+
+}
+/*保存*/
+.save{
+ width: 157rpx;
+ height: 50rpx;
+ background-color: #22c607;
+ border-radius:5px;
+ position: absolute;
+ bottom: 20rpx;
+ right:20rpx; 
+ color: #ffffff;
+ font-size: 36rpx;
+ text-align: center;
+ line-height: 50rpx;
+}
+.laji{
+ width: 41rpx;
+ height: 43rpx;
+}
+.delete{
+ position: absolute;
+ left:20rpx;
+ bottom: 20rpx;
+ align-items: center;
+ display: flex;
+ flex-direction: row;
+ 
+}
+.delete-text{
+ font-size: 36rpx;
+ color: #333333;
+ margin-left: 26rpx;
+ font-weight: bold;
+ align-items: center;
+ 
+}
+.hide{ 
+  display: none;
+}
+.hide2{
+  display: block;
+
+}

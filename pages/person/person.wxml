@@ -1,0 +1,79 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/lun.png" class="lun"></image>
+    <text class="product">个人中心</text>
+    <image src="/images/detail/talk.png" class="talk"></image>
+    <view class="cicle">{{talk}}</view>
+  </view>
+
+  <!--背景图-->
+  <view class="background">
+    <image src="/images/detail/bg.png" class="bg"></image>
+    <image src="/images/detail/person2.png" class="person"></image>
+    <text class="name" bindtap="name">{{name}}</text>
+    <image src="/images/detail/jiantou2.png" class="jiantou"></image>
+    <image src="/images/center/tou.png" class="tou"></image>
+    <image src="/images/center/phone.png" class="phone"></image>
+    <view class="background-black">
+      <view class="left">
+        <image src="/images/center/xian.png" class="xian"></image>
+        <text class="wo">{{value}}</text>
+        <text class="wo2">商品收藏</text>
+      </view>
+      <view class="left">
+        <text class="wo">{{value2}}</text>
+        <text class="wo2">浏览足记</text>
+      </view>
+    </view>
+  </view>
+  <view class="back"></view>
+
+  <!--菜单选项-->
+  <view class="menu" bindtap="">
+    <text class="menu-text">分享二维码赚钱</text>
+    <image src="/images/center/jian2.png" class="jian2"></image>
+  </view>
+  <view class="menu" bindtap="">
+    <text class="menu-text">我的伙伴</text>
+    <image src="/images/center/jian2.png" class="jian2"></image>
+  </view>
+  <view class="menu" bindtap="">
+    <text class="menu-text">我的订单</text>
+    <image src="/images/center/jian2.png" class="jian2"></image>
+  </view>
+  <view class="menu" bindtap="">
+    <text class="menu-text">我的银行卡</text>
+    <image src="/images/center/jian2.png" class="jian2"></image>
+  </view>
+  <view class="menu" bindtap="">
+    <text class="menu-text">我的地址</text>
+    <image src="/images/center/jian2.png" class="jian2"></image>
+  </view>
+  <view class="menu" bindtap="">
+    <text class="menu-text">手机绑定</text>
+    <text class="phone2">{{text2}}</text>
+    <image src="/images/center/jian2.png" class="jian2"></image>
+  </view>
+  <view class="back2"></view>
+
+  <!--底部导航-->
+  <view class="footer" style="position:fixed;bottom:0">
+    <view class="footer-content">
+      <image src="/images/detail/zhuye2.png" class="zhuye"></image>
+      <text class="zhuye-text1">主页</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/fenlei.png" class="zhuye"></image>
+      <text class="zhuye-text">分类</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/gouwuche.png" class="zhuye"></image>
+      <text class="zhuye-text">购物车</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/detail/hong-my.png" class="zhuye"></image>
+      <text class="zhuye-text" style="color:#ff0000">我的</text>
+    </view>
+  </view>
+</view>

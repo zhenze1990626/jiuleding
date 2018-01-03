@@ -1,0 +1,152 @@
+
+/*头部*/
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+.header {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.back {
+  width: 34rpx;
+  height: 50rpx;
+  align-items: center;
+  margin: -20rpx 0 0 20rpx;
+}
+
+.header-text {
+  font-size: 36rpx;
+  color: #fff;
+  width: 430rpx;
+  height: 70rpx;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -54rpx;
+}
+.header-text2{
+  font-size: 26rpx;
+  color: #ffffff;
+  position: absolute;
+  right:20rpx;
+  margin-top: -20rpx;
+
+}
+/*内容*/
+.car-content{
+  width: 100%;
+  height: 160rpx;
+  background:#ffffff;
+  border-bottom:1px solid #eeeeee; 
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.xuan{
+  width: 27rpx;
+  height: 27rpx;
+  margin:72rpx 30rpx 0 20rpx;
+}
+.jiu{
+  width: 70rpx;
+  height:100rpx;
+  margin:40rpx 0 0 10rpx;
+}
+.text{
+  display: flex;
+  flex-direction:column;
+  margin-left: 35rpx;
+  margin-top: 35rpx;
+}
+.name{
+  font-size: 26rpx;
+  color:#333333;
+  font-weight: bold;
+}
+.price{
+  font-size: 26rpx;
+  color:#d90e0e;
+  margin-top: 30rpx;
+  font-weight: bold;
+}
+.dingzhi{
+  font-size: 22rpx;
+  color: #05c500;
+  font-weight: bold;
+  margin: 38rpx 0 0 40rpx;
+}
+.text2{
+  width:60rpx;
+  height:28rpx;
+  border-radius:3px;
+  border:1px solid #666666;
+  color: #333333;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  margin: 76rpx 0 0 84rpx;
+
+}
+.laji{
+ width: 41rpx;
+ height: 43rpx;
+ position: absolute;
+ right:20rpx;
+ bottom: 55rpx;
+}
+/*结算*/
+.count{
+width: 750rpx;
+height: 90rpx;
+background: #eeeeee;
+display: flex;
+flex-direction: row;
+position: relative;
+position: fixed;
+bottom:0;
+}
+.xuan2{
+  width: 25rpx;
+  height: 25rpx;
+  margin:22rpx 0 0 19rpx;
+}
+.all{
+  font-size: 36rpx;
+  color:#333333;
+  margin: 17rpx 0 0 23rpx;
+}
+.heji{
+ display: flex;
+ flex-direction:column;
+}
+.heji-text{
+ font-size: 36rpx;
+ color:#333333;
+ margin-left: 230rpx;
+}
+.price2{
+ font-size: 26rpx;
+ color:#d90e0e;
+}
+.address-price{
+ font-size: 26rpx;
+ color:#666666;
+ margin-left:320rpx;
+}
+.jiesuan{
+ width:180rpx;
+ height: 90rpx;
+ background:#d90e0e;
+ position: absolute;
+ right:0;
+ text-align:center;
+ color:#ffffff;
+ line-height: 90rpx;
+}

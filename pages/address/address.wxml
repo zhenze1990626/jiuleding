@@ -1,0 +1,42 @@
+  <view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back" bindtap="back"></image>
+    <text class="header-text">{{text}}</text>
+  </view>
+  <!--地址信息-->
+  <view class="address-content">
+   <view class="address-row">
+    <text>收货人</text>
+    <input placeholder="请填写姓名" value="{{name1}}"maxlength="7" bindinput="inputUser"/>
+   </view>
+   <view class="address-row">
+    <text>手机号</text>
+    <input placeholder="请填写手机号" maxlength="11" value="{{name2}}" minlength="11" type="number" bindinput="inputPhone" />
+   </view>
+   <view class="address-row">
+    <text>地区详情</text>
+    <input placeholder="请填写省市区" maxlength="11"  value="{{name3}}" minlength="11" type="number" bindinput="inputDetail"/>
+   </view>
+   <view class="address-row">
+    <text>详细地址</text>
+    <input placeholder="请填写详细地址不超过20个汉字"  value="{{name4}}"maxlength="30" bindinput="inputAdress"/>
+   </view>
+   <view class="address-row">
+    <text>邮政编码</text>
+    <input placeholder="请填写邮政编码" maxlength="6" value="{{name5}}" type="number" bindinput="inputNumber"/>
+   </view>
+   </view>
+
+  <!--保存确认删除-->
+  <view class="save" bindtap="save" bindtouchend="save2">
+    {{text2}}
+  </view>
+  <view class="{{flag==0?'hide':'hide2'}}" bindtap="delete">
+  <view class="delete">
+   <image src="/images/car/laji.png" class="laji"></image>
+   <text class="delete-text">删除</text>
+  </view>
+  </view>
+
+  </view>

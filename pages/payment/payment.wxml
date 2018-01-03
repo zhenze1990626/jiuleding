@@ -1,0 +1,53 @@
+<view class="container">
+  <!--头部-->
+  <view class="header">
+    <image src="/images/detail/back.png" class="back" bindtap="back"></image>
+    <text class="header-text">{{text}}</text>
+  </view>
+  <view class="black"></view>
+    <!--订单详情-->
+ <scroll-view scroll-y style="height:350rpx;" >
+  <block wx:for="{{post_key}}" wx:for-item="item">
+  <view class="car-content" catchtap="onpost" data-postId="{{item.postId}}">
+    <image src="/images/car/checkbox.png" class="checkbox"></image>
+    <navigator url="../welcome/detail/detail?id={{item.postId}}">
+    <image src="{{item.image1}}" class="jiu"></image>
+    </navigator>
+    <view class="text">
+     <text class="name">{{item.name}}</text>
+     <text class="price">￥{{item.price}}</text>
+    </view>
+    <text class="dingzhi">{{item.style}}</text>
+    <view class="position">x{{num}}</view>
+  </view>
+ </block>
+ </scroll-view >
+ <view class="black2"></view>
+ <!--结算-->
+ <view class="Settlement">
+   <image src="/images/center/check.png" class="check"></image> 
+   <text class="all">全选</text>
+   <image src="/images/center/rub.png" class="rub"></image>
+   <view class="code">去结算</view>
+ </view>
+
+  <!--底部导航-->
+ <view class="footer" style="position:fixed;bottom:0">
+    <view class="footer-content">
+      <image src="/images/detail/zhuye2.png" class="zhuye"></image>
+      <text class="zhuye-text1">主页</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/fenlei.png" class="zhuye"></image>
+      <text class="zhuye-text">分类</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/gouwuche.png" class="zhuye"></image>
+      <text class="zhuye-text">购物车</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/detail/hong-my.png" class="zhuye"></image>
+      <text class="zhuye-text" style="color:#ff0000">我的</text>
+    </view>
+  </view>
+</view>

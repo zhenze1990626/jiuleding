@@ -1,0 +1,21 @@
+ 
+ <template name="postItem">
+  <view class="footer">
+    <view class="footer-content">
+      <image src="/images/welcome/zhuye.png" class="zhuye"></image>
+      <text class="zhuye-text1">主页</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/fenlei.png" class="zhuye"></image>
+      <text class="zhuye-text">分类</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/gouwuche.png" class="zhuye"></image>
+      <text class="zhuye-text">购物车</text>
+    </view>
+    <view class="footer-content">
+      <image src="/images/welcome/wode.png" class="zhuye"></image>
+      <text class="zhuye-text">我的</text>
+    </view>
+  </view>
+</template>
